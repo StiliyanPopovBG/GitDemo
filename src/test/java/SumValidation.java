@@ -17,8 +17,10 @@ public class SumValidation {
             totalSum += amount;
         }
         System.out.println(totalSum);
+        System.out.println("The total sum is: " + totalSum);
         int purchaseAmount = js.getInt("dashboard.purchaseAmount");
         System.out.println(purchaseAmount);
+        System.out.println("Purchase amount is: " + purchaseAmount);
         Assert.assertEquals(totalSum, purchaseAmount);
     }
 }
