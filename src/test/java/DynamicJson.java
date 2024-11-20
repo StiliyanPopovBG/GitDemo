@@ -26,6 +26,7 @@ public class DynamicJson {
         JsonPath jsonPath = ReUsableMethods.rawToJson(response);
         String id = jsonPath.get("ID");
         System.out.println(id);
+        System.out.println("AddBook id" + id);
     }
 
     // with dynamic values
@@ -45,8 +46,9 @@ public class DynamicJson {
         JsonPath jsonPath = ReUsableMethods.rawToJson(response);
         String id = jsonPath.get("ID");
         System.out.println(id);
+        System.out.println("AddBook id" + id);
 
-        // delete a created book
+        // delete a created book by id
         given().log().all().header("Content-Type", "application/json")
                 .body("{\n" +
                         "    \"ID\": \"" + id + "\"\n" +
