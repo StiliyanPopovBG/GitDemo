@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class DynamicJson {
 
     // with hard codded json
-//    @Test
+//    @Test this test wont be executed  
     public void addBook() {
         RestAssured.baseURI = "http://216.10.245.166";
         String response = given().log().all().header("Content-Type", "application/json")
@@ -87,11 +87,11 @@ public class DynamicJson {
                 .then()
                 .assertThat().statusCode(200);
     }
+
     @DataProvider(name = "BooksData")
     public Object[][] getData() {
         // array = collection of elements
         // multidimensional array = collection of arrays
         return new Object[][]{{"qweraa", "1231"}, {"zxcvzzx", "0909"}, {"asdfff", "5655"}};
-
     }
 }
