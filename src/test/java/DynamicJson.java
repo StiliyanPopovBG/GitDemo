@@ -26,8 +26,12 @@ public class DynamicJson {
         JsonPath jsonPath = ReUsableMethods.rawToJson(response);
         String id = jsonPath.get("ID");
         System.out.println("----------------------------");
+        System.out.println("----------------------------");
+        System.out.println("----------------------------");
         System.out.println(id);
         System.out.println("AddBook id" + id);
+        System.out.println("----------------------------");
+        System.out.println("----------------------------");
         System.out.println("----------------------------");
     }
 
@@ -48,8 +52,12 @@ public class DynamicJson {
         JsonPath jsonPath = ReUsableMethods.rawToJson(response);
         String id = jsonPath.get("ID");
         System.out.println("----------------------------");
+        System.out.println("----------------------------");
+        System.out.println("----------------------------");
         System.out.println(id);
         System.out.println("AddBook id" + id);
+        System.out.println("----------------------------");
+        System.out.println("----------------------------");
         System.out.println("----------------------------");
 
         // delete a created book by id
@@ -80,8 +88,12 @@ public class DynamicJson {
         JsonPath jsonPath = ReUsableMethods.rawToJson(response);
         String id = jsonPath.get("ID");
         System.out.println("----------------------------");
+        System.out.println("----------------------------");
+        System.out.println("----------------------------");
         System.out.println(id);
         System.out.println("AddBook id" + id);
+        System.out.println("----------------------------");
+        System.out.println("----------------------------");
         System.out.println("----------------------------");
 
         // delete a created book
